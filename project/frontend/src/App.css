@@ -1,0 +1,540 @@
+/* CSS Reset for total control over all padding / margins */
+* {
+  padding: 0;
+  margin: 0;
+  display: border-box;
+  
+}
+
+
+html, body {
+  background-color: #242428;
+  /* color: white; */
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.WelcomePage {
+  border: solid 70px transparent;
+  /* color: aliceblue; */
+  font-weight: 600;
+  font-size: 70px;
+  line-height:65px;
+  /* letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase; */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 90%;
+  animation: move 5s ease infinite;
+  background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgba(255,94,0,1) 86.4% );
+}
+
+@keyframes move {
+  0%,100%{
+      background-position: 200% 0%;
+  }
+
+  50%{
+      background-position: 0% 200%;
+  }
+}
+
+/* lineup class and keyframes */
+.lineUp {
+  animation: 2s anim-lineUp ease-out ;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.pages {
+  color: white;
+}
+
+.profile_container {
+  color: white;
+}
+
+.container-fluid {
+  background-color: #242428;
+}
+
+.login-class {
+  margin: 0px 12px;
+}
+
+.btn:hover {
+  color: #FF5E03 ;
+}
+
+.Auth-form-container-LogIn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border: 50px solid;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.navbar-nav-custom {
+  margin-left: 980px;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+th {
+  color: white;
+}
+
+.AdminBoard-container {
+  text-align: center;
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.BoardUser-container {
+  color: white;
+}
+
+.jumbotron {
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+
+.tbody-custom {
+   background-color: #f7f7f7;
+}
+
+.btn-success {
+  margin-right: 7px;
+}
+
+.btn-info {
+  margin-right: 7px;
+}
+
+/*************************** ManageAuctions.js **************************************/
+.manage-auctions {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card-custom {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.btn-custom {
+  position: absolute;
+  left: 50%;
+}
+
+.message {
+  text-align: center;
+  color: white;
+  padding-left: 13%;
+  /* padding-right: 10%;*/
+  padding-top: 10%; 
+}
+
+/***************************************************************************************/
+/****************************** CreateAuction.js ***************************************/
+
+.create-auction-label {
+  color: #686875;
+}
+
+.img {
+  width:50%;
+}
+
+.align-div{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+}
+
+/***************************************************************************************/
+/****************************** EditAuction.js ***************************************/
+.edit-auction-h6 {
+  color: rgb(16, 91, 126);
+}
+/***************************************************************************************/
+
+
+.sec-center {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+}
+/* [type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+} */
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2;
+  height: 50px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 220px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+  border: none;
+  background-color: #686875;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
+}
+
+.dropdown:checked + label:before,
+.dropdown:not(:checked) + label:before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: auto;
+  pointer-events: none;
+}
+.dropdown:checked + label:before{
+  pointer-events: auto;
+}
+.dropdown:not(:checked) + label .uil {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+.dropdown:checked + label .uil {
+  transform: rotate(180deg);
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+.section-dropdown {
+  position: absolute;
+  padding: 5px;
+  background-color: #111;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 200ms linear;
+}
+
+.dropdown:checked ~ .section-dropdown{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.section-dropdown:before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: '';
+  display: block;
+  z-index: 1;
+}
+.section-dropdown:after {
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent; 
+  border-bottom: 8px solid #111;
+  content: '';
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+
+
+a {
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 2px 0;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+}
+
+/* a:hover {
+  color: #102770;
+  background-color: #ffeba7;
+} */
+
+a .uil {
+  font-size: 22px;
+}
+.dropdown-sub:checked + label,
+.dropdown-sub:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub:checked + label .uil,
+.dropdown-sub:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label:hover,
+.dropdown-sub:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.section-dropdown-sub {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub:checked ~ .section-dropdown-sub{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub a {
+  font-size: 14px;
+}
+.section-dropdown-sub a .uil {
+  font-size: 20px;
+}
+
+/* .each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+} */
+
+
+/* .each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.expiredAuction {
+  color: red;
+}
+
+.winnerAuction {
+  color: green;
+}
+
+.slide-container {
+  width: 70%;
+  margin: auto;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
